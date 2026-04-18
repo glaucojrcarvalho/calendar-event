@@ -43,7 +43,7 @@ class EventRecurringService
                 'description' => $data['description'],
                 'startDate' => $nextOccurrence[0],
                 'endDate' => $nextOccurrence[1],
-                'recurringPattern' => $data['recurringPattern']
+                'recurringPattern' => $data['recurringPattern'] ?? null
             ]);
 
             array_push($recurringEvents, $recurringEvent);
